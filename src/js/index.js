@@ -165,7 +165,7 @@ const printBoard = () => {
     for (let j = 0; j < boardArr[i].length; j++) {
       let id = x;
       board +=
-        `<div id=${id} class='col s2 cell'> ` +
+        `<div id=${id} class='col s2' class='cell'> ` +
         boardArr[i][j] +
         "</div>";
       x++;
