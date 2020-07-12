@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../css/styles.css";
 let boardArr = [];
 let color1 = [];
 let color2 = [];
