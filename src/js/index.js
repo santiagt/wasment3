@@ -56,12 +56,11 @@ const switchPlayer = () => {
 };
 
 document.addEventListener("click", event => {
-  console.log(event.target.type);
-  if (event.target instanceof HTMLTableCellElement) {
-    event.preventDefault();
-    
-    let pos = event.target.id;
-    console.log(pos);
+  event.preventDefault();
+  
+  let pos = event.target.id;
+  console.log(pos);
+  if (!isNaN(pos)) { 
     let valid = playTurn(pos, player);
     if (valid) {
       printBoard();
@@ -159,21 +158,21 @@ const colorBoard = () => {
 };
 
 const printBoard = () => {
-  let board = "<table id='board'>";
+  let board = "<div id='board'>";
   let x = 0;
   for (let i = 0; i < boardArr.length; i++) {
-    board += "<tr>";
+    board += "<div class='row'>";
     for (let j = 0; j < boardArr[i].length; j++) {
       let id = x;
       board +=
-        `<td id=${id}> ` +
+        `<div id=${id} class='col s2'> ` +
         boardArr[i][j] +
-        "</td>";
+        "</div>";
       x++;
     };
-    board += "</tr>";
+    board += "</div>";
   };
-  board += "</table>";
+  board += "</div>";
   document.getElementById("board").innerHTML = board;
   
 };
