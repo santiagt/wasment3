@@ -15,7 +15,7 @@ body {
 #board {
   border-collapse: collapse;
 }
-#board td {
+#cell {
   border: 1px solid black;
   width: 59px;
   height: 59px;

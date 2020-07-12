@@ -165,7 +165,7 @@ const printBoard = () => {
     for (let j = 0; j < boardArr[i].length; j++) {
       let id = x;
       board +=
-        `<div id=${id} class='col s2'> ` +
+        `<div id=${id} class='col s2 cell'> ` +
         boardArr[i][j] +
         "</div>";
       x++;
@@ -178,7 +178,7 @@ const printBoard = () => {
 };
 
 printBoard();
-timer();
+//timer();
 
 
 
