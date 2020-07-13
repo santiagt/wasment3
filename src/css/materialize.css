@@ -9108,7 +9108,7 @@ body {
   height: 59px;
   text-align: center;
   font-size: 30px;
-  padding-top: 5px;
+  padding-top: 5px !important;
 }
 .row-board {
   margin-bottom: 0px;
