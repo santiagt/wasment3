@@ -10,11 +10,11 @@ let gameOver = false;
 
 const cleanBoard = () => {
   boardArr = [
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""],
-    ["", "", "", "", ""]
+    [" ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " "]
   ];
   color1 = [];
   color2 = [];
@@ -44,7 +44,7 @@ const playTurn = (cell, mark) => {
   }
   console.log(row);
 
-  if (row > -1 && boardArr[row][col] === "") {
+  if (row > -1 && boardArr[row][col] === " ") {
     boardArr[row][col] = mark;
     mark === "X" ? color1.push(cell) : color2.push(cell);
     return true;
@@ -75,7 +75,7 @@ document.addEventListener("click", event => {
   });
 
 
-const allEqual = arr => arr.every(v => v === arr[0] && v !== "");
+const allEqual = arr => arr.every(v => v === arr[0] && v !== " ");
 
 const checkWin = () => {
   let horarr = [[], [], [], [], []];
