@@ -159,13 +159,13 @@ const colorBoard = () => {
 };
 
 const printBoard = () => {
-  let board = "<br><div id='board' class='container'>";
+  let board = "<br><div id='board'>";
   let id = 0;
   for (let i = 0; i < boardArr.length; i++) {
     board += "<div class='row row-board'>";
     for (let j = 0; j < boardArr[i].length; j++) {
       board +=
-        `<div id=${id} class='col s2 cell'>` +
+        `<div id=${id} class='col s2 cell flow-text'>` +
         boardArr[i][j] +
         "</div>";
       id++;

@@ -9106,10 +9106,10 @@ body {
 .cell {
   border: 1px solid black;
   height: 59px;
-  width: 59px;
   text-align: center;
   font-size: 30px;
 }
 .row-board {
   margin-bottom: 0px;
+  width: 295px;
 }
