@@ -161,16 +161,15 @@ const colorBoard = () => {
 
 const printBoard = () => {
   let board = "<div id='board' class='container'>";
-  let x = 0;
+  let id = 0;
   for (let i = 0; i < boardArr.length; i++) {
     board += "<div class='row row-board'>";
     for (let j = 0; j < boardArr[i].length; j++) {
-      let id = x;
       board +=
-        `<div id=${id} class='col s1 cell'> ` +
+        `<div id=${id} class='col s1 cell'>` +
         boardArr[i][j] +
         "</div>";
-      x++;
+      id++;
     };
     board += "</div>";
   };
