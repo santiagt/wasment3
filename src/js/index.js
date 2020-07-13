@@ -158,7 +158,7 @@ const colorBoard = () => {
 };
 
 const printBoard = () => {
-  let board = "<div id='board'>";
+  let board = "<div id='board' class='container'>";
   let x = 0;
   for (let i = 0; i < boardArr.length; i++) {
     board += "<div class='row'>";
