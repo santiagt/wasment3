@@ -159,7 +159,7 @@ const colorBoard = () => {
 };
 
 const printBoard = () => {
-  let board = "<div id='board' class='container'>";
+  let board = "<br><div id='board' class='container'>";
   let id = 0;
   for (let i = 0; i < boardArr.length; i++) {
     board += "<div class='row row-board'>";
@@ -178,7 +178,7 @@ const printBoard = () => {
 };
 
 printBoard();
-//timer();
+timer();
 
 
 
