@@ -163,7 +163,7 @@ const printBoard = () => {
   let board = "<div id='board' class='container'>";
   let id = 0;
   for (let i = 0; i < boardArr.length; i++) {
-    board += "<div class='row row-board'>";
+    board += "<div class='row'>";
     for (let j = 0; j < boardArr[i].length; j++) {
       board +=
         `<div id=${id} class='col s1'>` +
