@@ -1,4 +1,6 @@
 import "../css/styles.css";
+import "../css/materialize.css";
+
 let boardArr = [];
 let color1 = [];
 let color2 = [];
@@ -161,11 +163,11 @@ const printBoard = () => {
   let board = "<div id='board' class='container'>";
   let x = 0;
   for (let i = 0; i < boardArr.length; i++) {
-    board += "<div class='row'>";
+    board += "<div class='row row-board'>";
     for (let j = 0; j < boardArr[i].length; j++) {
       let id = x;
       board +=
-        `<div id=${id} class='col s2' class='cell'> ` +
+        `<div id=${id} class='col s1 cell'> ` +
         boardArr[i][j] +
         "</div>";
       x++;
